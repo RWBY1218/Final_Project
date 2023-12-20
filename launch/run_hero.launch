@@ -1,0 +1,24 @@
+<launch>
+  <!-- 启动 Gazebo -->
+  <include file="$(find rm_description)/launch/hero.launch">
+    <arg name="load_chassis" value="true"/>
+    <arg name="roller_type" value="realistic"/>
+    <arg name="paused" value="true"/>
+  </include>
+
+  <!-- 启动您的 PID 控制器 -->
+  <node name="pid_controller_node" pkg="hero_chassis_controller" type="pid_controller_node" output="screen">
+    <!-- 可以在这里添加其他参数，如 PID 控制器的配置文件等 -->
+    <rosparam file="$(find hero_chassis_controller)/config/PID.yaml" command="load"/>
+
+  </node>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" args="
+        controller/simple_chassis_controller
+        controller/joint_state_controller
+  "/>
+  <node name="cmd_vel_publisher" pkg="hero_chassis_controller" type="cmd_vel_publisher_node" respawn="false" output="screen"/>
+
+</launch>

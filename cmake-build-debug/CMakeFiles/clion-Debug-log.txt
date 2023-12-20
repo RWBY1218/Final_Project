@@ -1,0 +1,34 @@
+/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/rwby/clion-2023.2.2/bin/ninja/linux/x64/ninja -DCMAKE_CXX_COMPILER=/usr/bin/x86_64-w64-mingw32-cpp -G Ninja -S /home/rwby/catkin_ws/src/hero_chassis_controller -B /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug
+-- The CXX compiler identification is unknown
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: /usr/bin/x86_64-w64-mingw32-cpp
+-- Check for working CXX compiler: /usr/bin/x86_64-w64-mingw32-cpp - broken
+CMake Error at /home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:60 (message):
+  The C++ compiler
+
+    "/usr/bin/x86_64-w64-mingw32-cpp"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-J4HKUR
+    
+    Run Build Command(s):/home/rwby/clion-2023.2.2/bin/ninja/linux/x64/ninja -v cmTC_fe52e && [1/2] /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_fe52e.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-J4HKUR/testCXXCompiler.cxx
+    FAILED: CMakeFiles/cmTC_fe52e.dir/testCXXCompiler.cxx.o 
+    /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_fe52e.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-J4HKUR/testCXXCompiler.cxx
+    x86_64-w64-mingw32-cpp: fatal error: ‘-c’ is not a valid option to the preprocessor
+    compilation terminated.
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!

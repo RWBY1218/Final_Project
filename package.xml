@@ -1,8 +1,14 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>hero_chassis_controller</name>
-  <version>0.0.0</version>
+  <version>1.0.0</version>
   <description>The hero_chassis_controller package</description>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>control_toolbox</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <exec_depend>control_toolbox</exec_depend>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
@@ -54,6 +60,21 @@
   <!-- The export tag contains other, unspecified, tags -->
   <export>
     <!-- Other tools can request additional information be placed here -->
-
   </export>
+  <exec_depend>roscpp</exec_depend>
+  <build_depend>roslint</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <exec_depend>roslint</exec_depend>
+  <build_depend>controller_interface</build_depend>
+  <exec_depend>controller_interface</exec_depend>
+  <build_depend>hardware_interface</build_depend>
+  <exec_depend>hardware_interface</exec_depend>
+  <build_depend>forward_command_controller</build_depend>
+  <exec_depend>forward_command_controller</exec_depend>
+  <build_depend>pluginlib</build_depend>
+  <exec_depend>pluginlib</exec_depend>
+
+  <!-- 其他 build_depend 和 exec_depend 元素 -->
+
 </package>

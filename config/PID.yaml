@@ -1,0 +1,32 @@
+pid_controller:
+  type: control_toolbox/PID
+  kp: 10.0  # 适当调整这个值
+  ki: 1.0   # 适当调整这个值
+  kd: 0.1   # 适当调整这个值
+  # 可以添加其他PID参数
+
+
+wheel1:
+  pid:
+    p: 1.0
+    i: 0.1
+    d: 0.01
+
+wheel2:
+  pid:
+    p: 1.0
+    i: 0.1
+    d: 0.01
+
+wheel3:
+  pid:
+    p: 1.0
+    i: 0.1
+    d: 0.01
+
+wheel4:
+  pid:
+    p: 1.0
+    i: 0.1
+    d: 0.01
+
