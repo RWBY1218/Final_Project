@@ -5,9 +5,25 @@ project(hero_chassis_controller)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Add the include directories
+include_directories(
+        include
+        ${catkin_INCLUDE_DIRS}
+)
+
 ## By adding -Wall and -Werror, the compiler does not ignore warnings anymore,
 ## enforcing cleaner code.
 add_definitions(-Wall -Werror)
+
+# Define the source files for each executable
+set(CMD_VEL_PUBLISHER_SOURCE src/cmd_vel_publisher_node.cpp)
+set(HERO_CONTROL_SOURCE src/hero.control.cpp)
+set(PID_CONTROLLER_SOURCE src/pid_controller_node.cpp)
+
+# Add the executables
+add_executable(cmd_vel_publisher_node ${CMD_VEL_PUBLISHER_SOURCE})
+add_executable(hero_control ${HERO_CONTROL_SOURCE})
+add_executable(pid_controller_node ${PID_CONTROLLER_SOURCE})
 
 ## Find catkin macros and libraries
 find_package(catkin REQUIRED
@@ -20,17 +36,8 @@ find_package(catkin REQUIRED
         pluginlib
 )
 
-###################################
-## catkin specific configuration ##
-###################################
-## The catkin_package macro generates cmake config files for your package
-## Declare things to be passed to dependent projects
-## INCLUDE_DIRS: uncomment this if your package contains header files
-## LIBRARIES: libraries you create in this project that dependent projects also need
-## CATKIN_DEPENDS: catkin_packages dependent projects also need
-## DEPENDS: system dependencies of this project that dependent projects also need
+
 catkin_package(
-        ## This is only necessary because Eigen3 sets a non-standard EIGEN3_INCLUDE_DIR variable
         CATKIN_DEPENDS
         roscpp
         roslint
@@ -39,59 +46,18 @@ catkin_package(
         forward_command_controller
         pluginlib
         DEPENDS
+        INCLUDE_DIRS include
 )
 
-###########
-## Build ##
-###########
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
+
+
 include_directories(
         ${catkin_INCLUDE_DIRS}
-        # Set manually because Eigen sets a non standard INCLUDE DIR
+
 )
 
-#############
-## Install ##
-#############
 
-## Mark executables and/or libraries for installation
-#install(
-#    TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_core
-#    ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#    LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-#)
-#
-## Mark cpp header files for installation
-#install(
-#    DIRECTORY include/${PROJECT_NAME}/
-#    DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#    FILES_MATCHING PATTERN "*.hpp"
-#)
-#
-## Mark other files for installation
-#install(
-#    DIRECTORY doc
-#    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-#)
-#
-##############
-### Testing ##
-##############
-#
-#if (${CATKIN_ENABLE_TESTING})
-#  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
-#  ## Add gtest based cpp test target and link libraries
-#  catkin_add_gtest(${PROJECT_NAME}-test
-#      test/test_ros_package_template.cpp
-#      test/AlgorithmTest.cpp)
-#  target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME}_core)
-#endif ()
-
-##########################
-## Static code analysis ##
-##########################
-
-roslint_cpp()
+target_link_libraries(cmd_vel_publisher_node ${catkin_LIBRARIES})
+target_link_libraries(hero_control ${catkin_LIBRARIES})
+target_link_libraries(pid_controller_node ${catkin_LIBRARIES})

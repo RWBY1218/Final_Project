@@ -13,11 +13,11 @@ CMake Error at /home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Mo
 
   It fails with the following output:
 
-    Change Dir: /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-J4HKUR
+    Change Dir: /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5
     
-    Run Build Command(s):/home/rwby/clion-2023.2.2/bin/ninja/linux/x64/ninja -v cmTC_fe52e && [1/2] /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_fe52e.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-J4HKUR/testCXXCompiler.cxx
-    FAILED: CMakeFiles/cmTC_fe52e.dir/testCXXCompiler.cxx.o 
-    /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_fe52e.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-J4HKUR/testCXXCompiler.cxx
+    Run Build Command(s):/home/rwby/clion-2023.2.2/bin/ninja/linux/x64/ninja -v cmTC_0e767 && [1/2] /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_0e767.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5/testCXXCompiler.cxx
+    FAILED: CMakeFiles/cmTC_0e767.dir/testCXXCompiler.cxx.o 
+    /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_0e767.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5/testCXXCompiler.cxx
     x86_64-w64-mingw32-cpp: fatal error: ‘-c’ is not a valid option to the preprocessor
     compilation terminated.
     ninja: build stopped: subcommand failed.

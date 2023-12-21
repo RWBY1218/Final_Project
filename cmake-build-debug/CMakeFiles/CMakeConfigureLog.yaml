@@ -1114,3 +1114,440 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      # 1 "CMakeCXXCompilerId.cpp"
+      # 1 "<built-in>"
+      # 1 "<command-line>"
+      # 1 "CMakeCXXCompilerId.cpp"
+      # 419 "CMakeCXXCompilerId.cpp"
+      char const* info_compiler = "INFO" ":" "compiler[" "GNU" "]";
+      # 732 "CMakeCXXCompilerId.cpp"
+      char const info_version[] = {
+        'I', 'N', 'F', 'O', ':',
+        'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
+        ('0' + (((9) / 10000000)%10)), ('0' + (((9) / 1000000)%10)), ('0' + (((9) / 100000)%10)), ('0' + (((9) / 10000)%10)), ('0' + (((9) / 1000)%10)), ('0' + (((9) / 100)%10)), ('0' + (((9) / 10)%10)), ('0' + ((9) % 10)),
+      
+        '.', ('0' + (((3) / 10000000)%10)), ('0' + (((3) / 1000000)%10)), ('0' + (((3) / 100000)%10)), ('0' + (((3) / 10000)%10)), ('0' + (((3) / 1000)%10)), ('0' + (((3) / 100)%10)), ('0' + (((3) / 10)%10)), ('0' + ((3) % 10)),
+      
+         '.', ('0' + (((0) / 10000000)%10)), ('0' + (((0) / 1000000)%10)), ('0' + (((0) / 100000)%10)), ('0' + (((0) / 10000)%10)), ('0' + (((0) / 1000)%10)), ('0' + (((0) / 100)%10)), ('0' + (((0) / 10)%10)), ('0' + ((0) % 10)),
+      
+      
+      
+      
+      
+        ']','\\0'};
+      # 781 "CMakeCXXCompilerId.cpp"
+      char const* info_platform = "INFO" ":" "platform[" "MinGW" "]";
+      char const* info_arch = "INFO" ":" "arch[" "]";
+      # 802 "CMakeCXXCompilerId.cpp"
+      const char* info_language_standard_default = "INFO" ":" "standard_default["
+      
+      
+      
+      
+      
+      
+      
+        "14"
+      
+      
+      
+      
+      
+      "]";
+      
+      const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+      
+      
+      
+        "ON"
+      
+      
+      
+      "]";
+      
+      
+      
+      int main(int argc, char* argv[])
+      {
+        int require = 0;
+        require += info_compiler[argc];
+        require += info_platform[argc];
+        require += info_arch[argc];
+      
+        require += info_version[argc];
+      # 851 "CMakeCXXCompilerId.cpp"
+        require += info_language_standard_default[argc];
+        require += info_language_extensions_default[argc];
+        (void)argv;
+        return require;
+      }
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" did not produce an executable in "/home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX".
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: fatal error: ‘-c’ is not a valid option to the preprocessor
+      compilation terminated.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: error: unrecognized command line option ‘--c++’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      x86_64-w64-mingw32-cpp: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: fatal error: ‘-c’ is not a valid option to the preprocessor
+      compilation terminated.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      # 1 "CMakeCXXCompilerId.cpp"
+      # 1 "<built-in>"
+      # 1 "<command-line>"
+      # 1 "CMakeCXXCompilerId.cpp"
+      # 419 "CMakeCXXCompilerId.cpp"
+      char const* info_compiler = "INFO" ":" "compiler[" "GNU" "]";
+      # 732 "CMakeCXXCompilerId.cpp"
+      char const info_version[] = {
+        'I', 'N', 'F', 'O', ':',
+        'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
+        ('0' + (((9) / 10000000)%10)), ('0' + (((9) / 1000000)%10)), ('0' + (((9) / 100000)%10)), ('0' + (((9) / 10000)%10)), ('0' + (((9) / 1000)%10)), ('0' + (((9) / 100)%10)), ('0' + (((9) / 10)%10)), ('0' + ((9) % 10)),
+      
+        '.', ('0' + (((3) / 10000000)%10)), ('0' + (((3) / 1000000)%10)), ('0' + (((3) / 100000)%10)), ('0' + (((3) / 10000)%10)), ('0' + (((3) / 1000)%10)), ('0' + (((3) / 100)%10)), ('0' + (((3) / 10)%10)), ('0' + ((3) % 10)),
+      
+         '.', ('0' + (((0) / 10000000)%10)), ('0' + (((0) / 1000000)%10)), ('0' + (((0) / 100000)%10)), ('0' + (((0) / 10000)%10)), ('0' + (((0) / 1000)%10)), ('0' + (((0) / 100)%10)), ('0' + (((0) / 10)%10)), ('0' + ((0) % 10)),
+      
+      
+      
+      
+      
+        ']','\\0'};
+      # 781 "CMakeCXXCompilerId.cpp"
+      char const* info_platform = "INFO" ":" "platform[" "MinGW" "]";
+      char const* info_arch = "INFO" ":" "arch[" "]";
+      # 802 "CMakeCXXCompilerId.cpp"
+      const char* info_language_standard_default = "INFO" ":" "standard_default["
+      
+      
+      
+      
+      
+      
+      
+        "14"
+      
+      
+      
+      
+      
+      "]";
+      
+      const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+      
+      
+      
+        "ON"
+      
+      
+      
+      "]";
+      
+      
+      
+      int main(int argc, char* argv[])
+      {
+        int require = 0;
+        require += info_compiler[argc];
+        require += info_platform[argc];
+        require += info_arch[argc];
+      
+        require += info_version[argc];
+      # 851 "CMakeCXXCompilerId.cpp"
+        require += info_language_standard_default[argc];
+        require += info_language_extensions_default[argc];
+        (void)argv;
+        return require;
+      }
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" did not produce an executable in "/home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX".
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: fatal error: ‘-c’ is not a valid option to the preprocessor
+      compilation terminated.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: error: unrecognized command line option ‘--c++’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: error: unrecognized command line option ‘--ec++’; did you mean ‘-Weffc++’?
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: warning: ‘-mcpu=’ is deprecated; use ‘-mtune=’ or ‘-march=’ instead
+      x86_64-w64-mingw32-cpp: error: unrecognized command line option ‘--target=arm-arm-none-eabi’
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/x86_64-w64-mingw32-cpp 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      1
+      x86_64-w64-mingw32-cpp: fatal error: ‘-c’ is not a valid option to the preprocessor
+      compilation terminated.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1111 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" terminated after 10 s due to timeout.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1111 (message)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" terminated after 10 s due to timeout.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CBGZX4"
+      binary: "/home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CBGZX4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CBGZX4
+        
+        Run Build Command(s):/home/rwby/clion-2023.2.2/bin/ninja/linux/x64/ninja -v cmTC_4971d && [1/2] /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_4971d.dir/CMakeCXXCompilerABI.cpp.o -c /home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        FAILED: CMakeFiles/cmTC_4971d.dir/CMakeCXXCompilerABI.cpp.o 
+        /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_4971d.dir/CMakeCXXCompilerABI.cpp.o -c /home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        x86_64-w64-mingw32-cpp: fatal error: '-c' is not a valid option to the preprocessor
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/rwby/clion-2023.2.2/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working CXX compiler: /usr/bin/x86_64-w64-mingw32-cpp"
+    directories:
+      source: "/home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5"
+      binary: "/home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5
+        
+        Run Build Command(s):/home/rwby/clion-2023.2.2/bin/ninja/linux/x64/ninja -v cmTC_0e767 && [1/2] /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_0e767.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5/testCXXCompiler.cxx
+        FAILED: CMakeFiles/cmTC_0e767.dir/testCXXCompiler.cxx.o 
+        /usr/bin/x86_64-w64-mingw32-cpp    -o CMakeFiles/cmTC_0e767.dir/testCXXCompiler.cxx.o -c /home/rwby/catkin_ws/src/hero_chassis_controller/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HSNtR5/testCXXCompiler.cxx
+        x86_64-w64-mingw32-cpp: fatal error: ‘-c’ is not a valid option to the preprocessor
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
