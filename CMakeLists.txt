@@ -24,6 +24,7 @@ set(PID_CONTROLLER_SOURCE src/pid_controller_node.cpp)
 add_executable(cmd_vel_publisher_node ${CMD_VEL_PUBLISHER_SOURCE})
 add_executable(hero_control ${HERO_CONTROL_SOURCE})
 add_executable(pid_controller_node ${PID_CONTROLLER_SOURCE})
+add_executable(inverse_kinematics_node src/inverse_kinematics.cpp)
 
 ## Find catkin macros and libraries
 find_package(catkin REQUIRED
@@ -61,3 +62,4 @@ include_directories(
 target_link_libraries(cmd_vel_publisher_node ${catkin_LIBRARIES})
 target_link_libraries(hero_control ${catkin_LIBRARIES})
 target_link_libraries(pid_controller_node ${catkin_LIBRARIES})
+target_link_libraries(inverse_kinematics_node ${catkin_LIBRARIES})
