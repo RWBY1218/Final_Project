@@ -21,7 +21,7 @@ public:
         }
 
       
-        target_velocity_sub_ = nh_.subscribe("target_velocity", 1, &PIDControllerNode::targetVelocityCallback, this);
+        target_velocity_sub_ = nh_.subscribe("cmd_vel", 1, &PIDControllerNode::targetVelocityCallback, this);
 
         
         joint_command_pub_ = nh_.advertise<std_msgs::Float64>("joint_command", 1);
@@ -31,7 +31,7 @@ public:
     }
 
    
-    void targetVelocityCallback(const std_msgs::Float64ConstPtr& msg) {
+    void cmdVelCallback(const geometry_msgs::Float64ConstPtr& msg) {
         double target_velocity = msg->data;
 
         
@@ -43,8 +43,9 @@ public:
         joint_command_msg.data = command;
         joint_command_pub_.publish(joint_command_msg);
 
-         
-        ROS_INFO("Received target velocity: %f", target_velocity);
+
+        ROS_INFO("Received target linear velocity: %f", target_linear_velocity);
+        ROS_INFO("Received target angular velocity: %f", target_angular_velocity);
         ROS_INFO("Current velocity: %f", current_velocity);
         ROS_INFO("Computed PID command: %f", command);
     }
